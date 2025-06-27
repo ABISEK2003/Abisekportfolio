@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Abisek A</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 0.6s ease-in;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+    footer {
+      flex-shrink: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .project-box {
+      border: 1px solid #dee2e6;
+      padding: 1.5rem;
+      margin-bottom: 1rem;
+      border-radius: 0.5rem;
+      background-color: #f8f9fa;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .project-box:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-user-circle me-2"></i>Abisek A</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container py-5">
+    <h2 class="text-center mb-4">My Projects</h2>
+
+    <div class="project-box">
+      <strong>Personal Portfolio Website</strong><br>
+      A responsive and interactive portfolio website built to showcase my skills, projects, certifications, and experience. 
+      Designed with a clean layout using HTML, CSS (Bootstrap), and JavaScript, it includes modal-based resume viewing, smooth navigation, 
+      and organized content sections for easy access.<br>
+      <strong>Live Website:</strong> 
+      <a href="https://your-portfolio-link.com" target="_blank">https://your-portfolio-link.com</a>
+    </div>
+
+    <div class="project-box">
+      <strong>THISAI – Tamil Nadu Tourism App</strong><br>
+      THISAI is an Android application developed by me and my friends to promote tourism in Tamil Nadu. 
+      The app provides information about popular tourist destinations, cultural heritage, historical landmarks, and local experiences across the state. 
+      With a user-friendly interface and offline accessibility, THISAI helps travelers explore Tamil Nadu more efficiently and enjoyably.<br>
+      <strong>App Link:</strong> 
+      <a href="https://play.google.com/store/apps/details?id=com.spothinkartz.thisai&pcampaignid=web_share" target="_blank">Download THISAI App</a>
+    </div>
+
+    <div class="project-box">
+      <strong>Spothinkartz.in – Project Showcase Website</strong><br>
+      Spothinkartz.in is a website developed by our team to showcase all the projects we have created collaboratively. 
+      It serves as a central hub to display project descriptions, links, demos, and documentation for easy access and visibility. 
+      The site is built with a clean interface and structured layout to present our work in a professional manner.<br>
+      <strong>Live Website:</strong> 
+      <a href="https://spothinkartz.in" target="_blank">https://spothinkartz.in</a>
+    </div>
+
+  </main>
+
+  <footer class="text-center py-3 bg-dark text-white">
+    <p><i class="fas fa-code"></i> &copy; 2025 Abisek A. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

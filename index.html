@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abisek A - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      animation: fadeIn 0.6s ease-in;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+    footer {
+      flex-shrink: 0;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .btn-outline-light {
+      margin-right: 10px;
+    }
+    .btn-resume {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-user-circle me-2"></i>Abisek A</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container text-center py-5">
+    <h1 class="mb-3">Hi, I'm <strong>Abisek A</strong></h1>
+    <p class="lead">Web Developer | Programmer | Learner</p>
+    
+    <div class="mb-4">
+      <a href="https://www.linkedin.com/in/abisek-a-b91b692a1" class="btn btn-outline-primary" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://github.com/your-github" class="btn btn-outline-dark" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+
+    <button class="btn btn-success btn-resume" data-bs-toggle="modal" data-bs-target="#resumeModal">
+      <i class="fas fa-file-alt"></i> View Resume
+    </button>
+
+    <!-- About Section -->
+    <div class="mt-5 text-start">
+      <h2>About Me</h2>
+      <p>I am a passionate web developer skilled in building modern and responsive websites using HTML, CSS, JavaScript, and frameworks like Bootstrap and React. I'm always learning new technologies and improving my skills.</p>
+    </div>
+  </main>
+
+  <!-- Resume Modal -->
+  <div class="modal fade" id="resumeModal" tabindex="-1" aria-labelledby="resumeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="resumeModalLabel">My Resume</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          <iframe src="D:\tcs docs\ABISEK A.pdf" width="100%" height="600px" style="border: none;"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-3 bg-dark text-white">
+    <p><i class="fas fa-code"></i> &copy; 2025 Abisek A. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
