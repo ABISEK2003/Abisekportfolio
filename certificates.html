@@ -37,11 +37,11 @@
       transform: scale(1.01);
       box-shadow: 0 4px 18px rgba(0, 0, 0, 0.1);
     }
-    .certificate-frame-large {
-      width: 100%;
-      height: 300px;
-      border: none;
-      border-radius: 0.3rem;
+    .certificate-image {
+      max-height: 280px;
+      object-fit: contain;
+      border-radius: 0.4rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
     }
     .card-body {
       padding: 1rem;
@@ -85,57 +85,45 @@
     <div class="row">
       <!-- Certificate 1 -->
       <div class="col-md-6">
-        <div class="certificate-card" data-bs-toggle="tooltip" title="Earned from Internshala Certification">
-          <!-- Mobile View -->
-          <div class="ratio ratio-4x3 d-sm-none mb-3">
-            <iframe 
-              src="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/Web%20Development.pdf?alt=media&token=8b3ab4e5-5973-480c-b3cd-565ccd2de8ea#toolbar=0" 
-              title="Web Development Certificate"
-              allowfullscreen
-              style="border: none; border-radius: 0.3rem;">
-            </iframe>
-          </div>
-          <!-- Desktop View -->
-          <iframe 
-            class="certificate-frame-large d-none d-sm-block"
-            src="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/Web%20Development.pdf?alt=media&token=8b3ab4e5-5973-480c-b3cd-565ccd2de8ea#toolbar=0"
-            title="Web Development Certificate">
-          </iframe>
+        <div class="certificate-card text-center" data-bs-toggle="tooltip" title="Earned from Internshala Certification">
+          <img 
+            src="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/web%20development.jpg?alt=media&token=1351a645-ab6b-44ee-ba51-b98916d50671" 
+            alt="Web Development Certificate"
+            class="img-fluid certificate-image mb-3"
+          />
           <div class="card-body">
             <h5 class="card-title">Web Development</h5>
             <p class="card-text">Internshala</p>
-            <a href="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/Web%20Development.pdf?alt=media&token=8b3ab4e5-5973-480c-b3cd-565ccd2de8ea" target="_blank" class="btn btn-sm btn-primary btn-view">View Full Certificate</a>
+            <a href="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/Web%20Development.pdf?alt=media&token=8b3ab4e5-5973-480c-b3cd-565ccd2de8ea"
+               target="_blank"
+               class="btn btn-sm btn-primary btn-view">
+              View Full Certificate
+            </a>
           </div>
         </div>
       </div>
 
       <!-- Certificate 2 -->
       <div class="col-md-6">
-        <div class="certificate-card" data-bs-toggle="tooltip" title="Earned from Coursera">
-          <!-- Mobile View -->
-          <div class="ratio ratio-4x3 d-sm-none mb-3">
-            <iframe 
-              src="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/Python%20Programming.pdf?alt=media&token=002c8b6d-3441-4e12-b01f-ef55acd43e46#toolbar=0" 
-              title="Python Programming Certificate"
-              allowfullscreen
-              style="border: none; border-radius: 0.3rem;">
-            </iframe>
-          </div>
-          <!-- Desktop View -->
-          <iframe 
-            class="certificate-frame-large d-none d-sm-block"
-            src="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/Python%20Programming.pdf?alt=media&token=002c8b6d-3441-4e12-b01f-ef55acd43e46#toolbar=0"
-            title="Python Programming Certificate">
-          </iframe>
+        <div class="certificate-card text-center" data-bs-toggle="tooltip" title="Earned from Coursera">
+          <img 
+            src="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/python%20programming.jpg?alt=media&token=80ef0557-8c27-42c5-b6b2-b6ffbbfb1631" 
+            alt="Python Programming Certificate"
+            class="img-fluid certificate-image mb-3"
+          />
           <div class="card-body">
             <h5 class="card-title">Python Programming</h5>
             <p class="card-text">Coursera</p>
-            <a href="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/Python%20Programming.pdf?alt=media&token=002c8b6d-3441-4e12-b01f-ef55acd43e46" target="_blank" class="btn btn-sm btn-primary btn-view">View Full Certificate</a>
+            <a href="https://firebasestorage.googleapis.com/v0/b/galppu-87317.appspot.com/o/Python%20Programming.pdf?alt=media&token=002c8b6d-3441-4e12-b01f-ef55acd43e46"
+               target="_blank"
+               class="btn btn-sm btn-primary btn-view">
+              View Full Certificate
+            </a>
           </div>
         </div>
       </div>
-      
-      <!-- Add more certificates following the same structure -->
+
+      <!-- Add more certificates below using same pattern -->
     </div>
   </main>
 
